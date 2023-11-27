@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="header" class="section-m1">
+        <div class="icon">
+            <h2 class="logo">Cartopia</h2>
+        </div>
+        <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a  href="Shop.html">Shop</a></li>
+            <li><a  href="Blog.html">Blog</a></li>
+            <li><a  href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li id="lg-bag"><a class="active" href="cart.html"><i class="fas fa-shopping-bag"></i></a></li>
+       <a href="#" id="close"><i class="fas fa-times"></i></a>
+        </ul>
+    </div>
+    <div id="mobile">
+
+        <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+        <i id="bar" class="far fa-outdent"></i>
+    </div>
+    </section>
+    <section id="page-header" class="about-header">
+      
+        <h2>#Let's_talk</h2>
+       
+        <p>LEAVE A MESSAGE, We love to hear from you</p>
+        
+    </section>
+   
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="images/g.jpg" alt=""></td>
+                    <td>NIKE Airforce shoes</td>
+                    <td>ksh 3500</td>
+                    <td><input type="number" value="1"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="images/45.jpg" alt=""></td>
+                    <td>Adidas Vintage</td>
+                    <td>ksh 1000</td>
+                    <td><input type="number" value="1"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="images/pr5.jpg" alt=""></td>
+                    <td>NIKE chelsea Tshirt</td>
+                    <td>ksh 700</td>
+                    <td><input type="number" value="1"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="images/48.jpg" alt=""></td>
+                    <td>NIKE Airforce shoes</td>
+                    <td>ksh 2000</td>
+                    <td><input type="number" value="1"></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong></strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to checkout</button>
+        </div>
+    </section>
+
+
+
+<footer class="section-p1">
+    <div class="col">
+        <div class="icon">
+            <h2 class="logo">Cartopia</h2>
+        </div>
+        <h4>contact</h4>
+        <p><strong>Address: </strong>254 NAIROBI, luthuri street, Kenya</p>
+        <p><strong>Phone: </strong>+254743235581/+254723177474</p>
+        <p><strong>Hours: </strong>10:00-18:00, Mon - Sat</p>
+    </div>
+    <div class="follow">
+        <h4>Follow us</h4>
+        <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-google"></i>
+        </div>
+    </div>
+    </div>
+<div class="col">
+    <h4>About</h4>
+    <a href="#">About us</a>
+    <a href="#">Delivery information</a>
+    <a href="#">Privacy policy</a>
+    <a href="#">Terms and condition</a>
+    <a href="#">Contact us</a>
+</div>
+<div class="col">
+    <h4>My Account</h4>
+    <a href="#">Sign in</a>
+    <a href="#">View Cart</a>
+    <a href="#">My wishlist</a>
+    <a href="#">Track My Order</a>
+    <a href="#">Help</a>
+    
+</div>
+<div class="col install">
+    <h4>Install App</h4>
+    <p>from App store or Google store</p>
+    <div class="row">
+         <img src="images/goo.png" alt="">
+         <img src="images/app1.png" alt="">
+    </div>
+    <P>Secure Payment Gateways</P>
+    <img src="images/visa.png" alt="">
+</div>
+<div class="copyright">
+    <p>@2023 Jacheri Solutions ke</p>
+</div>
+</footer>
+   
+<script>
+    // Function to add items to the cart table
+    function addToCart(image, name, price, quantity) {
+        // Create a new row for the cart table
+        const newRow = document.createElement('tr');
+        newRow.innerHTML = `
+            <td><a href="#" onclick="removeItem(this)">Remove</a></td>
+            <td><img src="${image}" alt=""></td>
+            <td>${name}</td>
+            <td>${price}</td>
+            <td><input type="number" value="${quantity}" oninput="updateSubtotal(this)"></td>
+            <td>${price * quantity}</td>
+        `;
+
+        // Append the new row to the cart table
+        const cartTableBody = document.getElementById('cart-table-body');
+        cartTableBody.appendChild(newRow);
+    }
+
+    // Function to remove an item from the cart table
+    function removeItem(row) {
+        const cartTableBody = document.getElementById('cart-table-body');
+        cartTableBody.removeChild(row.parentElement.parentElement);
+    }
+
+    // Function to update the subtotal when the quantity changes
+    function updateSubtotal(input) {
+        const row = input.parentElement.parentElement;
+        const price = parseFloat(row.children[3].textContent);
+        const quantity = parseInt(input.value);
+        row.children[5].textContent = price * quantity;
+    }
+
+    // Parse query parameters to add items to the cart
+    const urlParams = new URLSearchParams(window.location.search);
+    const image = urlParams.get('image');
+    const name = urlParams.get('name');
+    const price = parseFloat(urlParams.get('price'));
+    const quantity = parseInt(urlParams.get('quantity'));
+
+    // Add the item to the cart
+    addToCart(image, name, price, quantity);
+</script>
+
+</body>
+</html>
